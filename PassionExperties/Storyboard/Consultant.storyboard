@@ -1,24 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="urT-1Z-hvk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login Consultant View Controller-->
         <scene sceneID="hfP-pf-jy0">
             <objects>
-                <viewController id="urT-1Z-hvk" sceneMemberID="viewController">
+                <viewController id="urT-1Z-hvk" customClass="LoginConsultantViewController" customModule="PassionExperties" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oF0-x1-WLV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HoG-Zk-WVh">
-                                <rect key="frame" x="30" y="283.5" width="315" height="120"/>
+                                <rect key="frame" x="30" y="253.5" width="315" height="180"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ht3-IP-jBE">
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
@@ -57,6 +58,19 @@
                                             </textField>
                                         </subviews>
                                     </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4t-Ta-iwi">
+                                        <rect key="frame" x="0.0" y="140" width="315" height="40"/>
+                                        <color key="backgroundColor" red="0.25882352939999997" green="0.64705882349999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="3hb-uY-Lxb"/>
+                                        </constraints>
+                                        <state key="normal" title="Login">
+                                            <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onLoginButtonAction:" destination="urT-1Z-hvk" eventType="touchUpInside" id="FZF-qh-BOp"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <constraints>
                                     <constraint firstItem="F92-Wl-HVS" firstAttribute="centerX" secondItem="HoG-Zk-WVh" secondAttribute="centerX" id="2Bj-l6-ykr"/>
@@ -67,38 +81,33 @@
                                     <constraint firstItem="OaB-EL-54m" firstAttribute="width" secondItem="FBg-73-buN" secondAttribute="width" id="SoN-ne-vSs"/>
                                     <constraint firstAttribute="trailing" secondItem="F92-Wl-HVS" secondAttribute="trailing" id="hf8-m9-Teq"/>
                                     <constraint firstItem="ht3-IP-jBE" firstAttribute="height" secondItem="F92-Wl-HVS" secondAttribute="height" id="hn2-ef-JUg"/>
+                                    <constraint firstItem="a4t-Ta-iwi" firstAttribute="centerX" secondItem="HoG-Zk-WVh" secondAttribute="centerX" id="pcx-oP-esd"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4t-Ta-iwi">
-                                <rect key="frame" x="157.5" y="438" width="60" height="40"/>
-                                <color key="backgroundColor" red="0.25882352939999997" green="0.64705882349999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="60" id="0Ts-Pa-LnR"/>
-                                    <constraint firstAttribute="height" constant="40" id="3hb-uY-Lxb"/>
-                                </constraints>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0u-U4-CZk">
                                 <rect key="frame" x="20" y="617" width="335" height="30"/>
                                 <state key="normal" title="Sign Up"/>
+                                <connections>
+                                    <action selector="onSignUpButtonAction:" destination="urT-1Z-hvk" eventType="touchUpInside" id="uqf-57-Hdy"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HoG-Zk-WVh" firstAttribute="centerY" secondItem="Omq-f5-nsX" secondAttribute="centerY" id="5F5-so-m2U"/>
-                            <constraint firstItem="a4t-Ta-iwi" firstAttribute="centerX" secondItem="HoG-Zk-WVh" secondAttribute="centerX" id="6fT-oc-uhk"/>
                             <constraint firstItem="X0u-U4-CZk" firstAttribute="centerX" secondItem="Omq-f5-nsX" secondAttribute="centerX" id="Dqr-FG-gAK"/>
                             <constraint firstItem="Omq-f5-nsX" firstAttribute="trailing" secondItem="X0u-U4-CZk" secondAttribute="trailing" constant="20" id="JN8-EP-klH"/>
                             <constraint firstItem="Omq-f5-nsX" firstAttribute="bottom" secondItem="X0u-U4-CZk" secondAttribute="bottom" constant="20" id="Wvd-D7-bfV"/>
                             <constraint firstItem="Omq-f5-nsX" firstAttribute="trailing" secondItem="HoG-Zk-WVh" secondAttribute="trailing" constant="30" id="hkj-Bh-igZ"/>
                             <constraint firstItem="X0u-U4-CZk" firstAttribute="leading" secondItem="Omq-f5-nsX" secondAttribute="leading" constant="20" id="i9U-zI-QHE"/>
-                            <constraint firstItem="a4t-Ta-iwi" firstAttribute="top" secondItem="HoG-Zk-WVh" secondAttribute="bottom" constant="34.5" id="jfw-aj-eCu"/>
                             <constraint firstItem="HoG-Zk-WVh" firstAttribute="leading" secondItem="Omq-f5-nsX" secondAttribute="leading" constant="30" id="pen-Ep-ZGN"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Omq-f5-nsX"/>
                     </view>
+                    <connections>
+                        <outlet property="passwordTextField" destination="FBg-73-buN" id="GaA-Tb-wES"/>
+                        <outlet property="userNameTextField" destination="OaB-EL-54m" id="13m-qa-cf9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="frj-Lv-TKI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
