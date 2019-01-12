@@ -53,6 +53,9 @@
 		1187EFFB21E9E255006F1940 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EFF621E9E255006F1940 /* Utilities.swift */; };
 		11E92D6521E9E7EA00104DFE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6421E9E7EA00104DFE /* MainViewController.swift */; };
 		11E92D6721E9EE5400104DFE /* DreamerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E92D6621E9EE5400104DFE /* DreamerStoryboard.storyboard */; };
+		11E92D6921E9F17000104DFE /* DreamerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6821E9F17000104DFE /* DreamerLoginViewController.swift */; };
+		11E92D6B21E9F19100104DFE /* DreamerSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */; };
+		11E92D6D21E9F1AE00104DFE /* DreamerDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6C21E9F1AE00104DFE /* DreamerDashboardViewController.swift */; };
 		557842ADB3B199433AFAA6FA /* Pods_PassionExperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */; };
 		93CBD35521E9EE760018075C /* Consultant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CBD35421E9EE760018075C /* Consultant.storyboard */; };
 		93CBD35721E9F5620018075C /* LoginConsultantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CBD35621E9F5620018075C /* LoginConsultantViewController.swift */; };
@@ -109,6 +112,9 @@
 		11E92D6221E9E3FF00104DFE /* PassionExperties-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassionExperties-Bridging-Header.h"; sourceTree = "<group>"; };
 		11E92D6421E9E7EA00104DFE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		11E92D6621E9EE5400104DFE /* DreamerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DreamerStoryboard.storyboard; sourceTree = "<group>"; };
+		11E92D6821E9F17000104DFE /* DreamerLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerLoginViewController.swift; sourceTree = "<group>"; };
+		11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerSignUpViewController.swift; sourceTree = "<group>"; };
+		11E92D6C21E9F1AE00104DFE /* DreamerDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerDashboardViewController.swift; sourceTree = "<group>"; };
 		71280261078FE7A20E007807 /* Pods-PassionExperties.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.debug.xcconfig"; sourceTree = "<group>"; };
 		93CBD35421E9EE760018075C /* Consultant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Consultant.storyboard; sourceTree = "<group>"; };
 		93CBD35621E9F5620018075C /* LoginConsultantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConsultantViewController.swift; sourceTree = "<group>"; };
@@ -181,6 +187,9 @@
 			children = (
 				11E92D6421E9E7EA00104DFE /* MainViewController.swift */,
 				93CBD35621E9F5620018075C /* LoginConsultantViewController.swift */,
+				11E92D6821E9F17000104DFE /* DreamerLoginViewController.swift */,
+				11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */,
+				11E92D6C21E9F1AE00104DFE /* DreamerDashboardViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -504,6 +513,7 @@
 				1187EFE921E9E234006F1940 /* RequestParameter.swift in Sources */,
 				1187EFEF21E9E240006F1940 /* DataStore.swift in Sources */,
 				1187EFFB21E9E255006F1940 /* Utilities.swift in Sources */,
+				11E92D6B21E9F19100104DFE /* DreamerSignUpViewController.swift in Sources */,
 				1187EFE821E9E234006F1940 /* NetworkManager.swift in Sources */,
 				1187EFF021E9E240006F1940 /* InternetManager.swift in Sources */,
 				1187EFC621E9E220006F1940 /* ErrorView.swift in Sources */,
@@ -515,6 +525,7 @@
 				1187EFF821E9E255006F1940 /* ImageCache.swift in Sources */,
 				1187EFE721E9E234006F1940 /* ApiCall.swift in Sources */,
 				1187EFEA21E9E234006F1940 /* ResponseObject.swift in Sources */,
+				11E92D6D21E9F1AE00104DFE /* DreamerDashboardViewController.swift in Sources */,
 				1187EFC821E9E220006F1940 /* FloatRatingView.swift in Sources */,
 				1187EFA721E9E214006F1940 /* InternetNotAvailable.swift in Sources */,
 				1187EF8821E9DF09006F1940 /* AppDelegate.swift in Sources */,
@@ -523,6 +534,7 @@
 				93CBD35721E9F5620018075C /* LoginConsultantViewController.swift in Sources */,
 				1187EFDB21E9E220006F1940 /* NMRangeSlider.m in Sources */,
 				1187EF9021E9DF09006F1940 /* PassionExperties.xcdatamodeld in Sources */,
+				11E92D6921E9F17000104DFE /* DreamerLoginViewController.swift in Sources */,
 				1187EFA321E9E206006F1940 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
