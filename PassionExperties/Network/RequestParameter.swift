@@ -2,6 +2,7 @@
 
 import Alamofire
 
+
 open class RequestParameter {
   /// Url to hit the api
   var url: String

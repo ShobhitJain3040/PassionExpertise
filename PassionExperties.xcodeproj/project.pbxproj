@@ -53,9 +53,6 @@
 		1187EFFB21E9E255006F1940 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EFF621E9E255006F1940 /* Utilities.swift */; };
 		11E92D6521E9E7EA00104DFE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6421E9E7EA00104DFE /* MainViewController.swift */; };
 		11E92D6721E9EE5400104DFE /* DreamerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E92D6621E9EE5400104DFE /* DreamerStoryboard.storyboard */; };
-		11E92D6921E9F17000104DFE /* DreamerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6821E9F17000104DFE /* DreamerLoginViewController.swift */; };
-		11E92D6B21E9F19100104DFE /* DreamerSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */; };
-		11E92D6D21E9F1AE00104DFE /* DreamerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6C21E9F1AE00104DFE /* DreamerHomeViewController.swift */; };
 		11E92D7021EA08C200104DFE /* DreamerFollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6F21EA08C200104DFE /* DreamerFollowersViewController.swift */; };
 		11E92D7221EA08E000104DFE /* DreamerChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D7121EA08E000104DFE /* DreamerChatViewController.swift */; };
 		11E92D7421EA090500104DFE /* DreamerNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D7321EA090500104DFE /* DreamerNotificationViewController.swift */; };
@@ -63,6 +60,7 @@
 		11E92D7B21EA17D300104DFE /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D7A21EA17D300104DFE /* NotificationCell.swift */; };
 		11E92D7D21EA212A00104DFE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D7C21EA212A00104DFE /* BaseViewController.swift */; };
 		557842ADB3B199433AFAA6FA /* Pods_PassionExperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */; };
+		930ED9B921EA4557008C07E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 930ED9B821EA4557008C07E8 /* GoogleService-Info.plist */; };
 		9333C57C21EA0A99004CFCB1 /* ConsultantSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333C57B21EA0A99004CFCB1 /* ConsultantSignUpViewController.swift */; };
 		9333C57E21EA0BF3004CFCB1 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333C57D21EA0BF3004CFCB1 /* RadioButton.swift */; };
 		93CBD35521E9EE760018075C /* Consultant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CBD35421E9EE760018075C /* Consultant.storyboard */; };
@@ -120,9 +118,6 @@
 		11E92D6221E9E3FF00104DFE /* PassionExperties-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassionExperties-Bridging-Header.h"; sourceTree = "<group>"; };
 		11E92D6421E9E7EA00104DFE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		11E92D6621E9EE5400104DFE /* DreamerStoryboard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DreamerStoryboard.storyboard; sourceTree = "<group>"; };
-		11E92D6821E9F17000104DFE /* DreamerLoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerLoginViewController.swift; sourceTree = "<group>"; };
-		11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerSignUpViewController.swift; sourceTree = "<group>"; };
-		11E92D6C21E9F1AE00104DFE /* DreamerHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerHomeViewController.swift; sourceTree = "<group>"; };
 		11E92D6F21EA08C200104DFE /* DreamerFollowersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerFollowersViewController.swift; sourceTree = "<group>"; };
 		11E92D7121EA08E000104DFE /* DreamerChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerChatViewController.swift; sourceTree = "<group>"; };
 		11E92D7321EA090500104DFE /* DreamerNotificationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerNotificationViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +125,7 @@
 		11E92D7A21EA17D300104DFE /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		11E92D7C21EA212A00104DFE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		71280261078FE7A20E007807 /* Pods-PassionExperties.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.debug.xcconfig"; sourceTree = "<group>"; };
+		930ED9B821EA4557008C07E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		9333C57B21EA0A99004CFCB1 /* ConsultantSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantSignUpViewController.swift; sourceTree = "<group>"; };
 		9333C57D21EA0BF3004CFCB1 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		93CBD35421E9EE760018075C /* Consultant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Consultant.storyboard; sourceTree = "<group>"; };
@@ -172,6 +168,7 @@
 		1187EF8621E9DF09006F1940 /* PassionExperties */ = {
 			isa = PBXGroup;
 			children = (
+				930ED9B821EA4557008C07E8 /* GoogleService-Info.plist */,
 				1187EF9C21E9E0D5006F1940 /* AppDelegate */,
 				11E92D6321E9E6A500104DFE /* Assets */,
 				1187EFF121E9E255006F1940 /* Utilities */,
@@ -206,9 +203,6 @@
 				11E92D6E21EA085100104DFE /* Dreamer */,
 				11E92D6421E9E7EA00104DFE /* MainViewController.swift */,
 				93CBD35621E9F5620018075C /* LoginConsultantViewController.swift */,
-				11E92D6821E9F17000104DFE /* DreamerLoginViewController.swift */,
-				11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */,
-				11E92D6C21E9F1AE00104DFE /* DreamerDashboardViewController.swift */,
 				9333C57B21EA0A99004CFCB1 /* ConsultantSignUpViewController.swift */,
 				9333C57D21EA0BF3004CFCB1 /* RadioButton.swift */,
 			);
@@ -374,9 +368,6 @@
 		11E92D6E21EA085100104DFE /* Dreamer */ = {
 			isa = PBXGroup;
 			children = (
-				11E92D6C21E9F1AE00104DFE /* DreamerHomeViewController.swift */,
-				11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */,
-				11E92D6821E9F17000104DFE /* DreamerLoginViewController.swift */,
 				11E92D6F21EA08C200104DFE /* DreamerFollowersViewController.swift */,
 				11E92D7121EA08E000104DFE /* DreamerChatViewController.swift */,
 				11E92D7321EA090500104DFE /* DreamerNotificationViewController.swift */,
@@ -490,6 +481,7 @@
 				1187EFD621E9E220006F1940 /* slider-default7-track@2x.png in Resources */,
 				1187EFD721E9E220006F1940 /* slider-default7-trackBackground.png in Resources */,
 				1187EFD921E9E220006F1940 /* slider-default7-trackCrossedOver.png in Resources */,
+				930ED9B921EA4557008C07E8 /* GoogleService-Info.plist in Resources */,
 				1187EFD021E9E220006F1940 /* slider-default-trackCrossedOver.png in Resources */,
 				1187EFD421E9E220006F1940 /* slider-default7-handle@2x.png in Resources */,
 				1187EFDA21E9E220006F1940 /* slider-default7-trackCrossedOver@2x.png in Resources */,
@@ -534,12 +526,20 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -556,7 +556,6 @@
 				1187EFE921E9E234006F1940 /* RequestParameter.swift in Sources */,
 				1187EFEF21E9E240006F1940 /* DataStore.swift in Sources */,
 				1187EFFB21E9E255006F1940 /* Utilities.swift in Sources */,
-				11E92D6B21E9F19100104DFE /* DreamerSignUpViewController.swift in Sources */,
 				1187EFE821E9E234006F1940 /* NetworkManager.swift in Sources */,
 				1187EFF021E9E240006F1940 /* InternetManager.swift in Sources */,
 				1187EFC621E9E220006F1940 /* ErrorView.swift in Sources */,
@@ -574,8 +573,6 @@
 				1187EFE721E9E234006F1940 /* ApiCall.swift in Sources */,
 				1187EFEA21E9E234006F1940 /* ResponseObject.swift in Sources */,
 				9333C57E21EA0BF3004CFCB1 /* RadioButton.swift in Sources */,
-				11E92D6D21E9F1AE00104DFE /* DreamerDashboardViewController.swift in Sources */,
-				11E92D6D21E9F1AE00104DFE /* DreamerHomeViewController.swift in Sources */,
 				1187EFC821E9E220006F1940 /* FloatRatingView.swift in Sources */,
 				1187EFA721E9E214006F1940 /* InternetNotAvailable.swift in Sources */,
 				1187EF8821E9DF09006F1940 /* AppDelegate.swift in Sources */,
@@ -586,7 +583,6 @@
 				1187EFDB21E9E220006F1940 /* NMRangeSlider.m in Sources */,
 				11E92D7021EA08C200104DFE /* DreamerFollowersViewController.swift in Sources */,
 				1187EF9021E9DF09006F1940 /* PassionExperties.xcdatamodeld in Sources */,
-				11E92D6921E9F17000104DFE /* DreamerLoginViewController.swift in Sources */,
 				1187EFA321E9E206006F1940 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
