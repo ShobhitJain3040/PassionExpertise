@@ -14,45 +14,33 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
   let datePicker = UIDatePicker()
   var activeTextField: UITextField? = nil
   var offsetY:CGFloat = 0
-  @IBOutlet weak var confirmPasswordTextField: UITextField!
+  
+  @IBOutlet weak var genderTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
   @IBOutlet weak var dobTextField: UITextField!
   @IBOutlet weak var phoneNumberTextField: UITextField!
   @IBOutlet weak var emailTextField: UITextField!
   @IBOutlet weak var nameTextField: UITextField!
-  @IBOutlet weak var maleButton: RadioButton!
-  @IBOutlet weak var femaleButton: RadioButton!
-  var gender = "male"
   
   override func viewDidLoad() {
     super.viewDidLoad()
     let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
     self.title = "Dashboard"
-    self.confirmPasswordTextField.delegate = self
     self.passwordTextField.delegate = self
     self.dobTextField.delegate = self
     self.phoneNumberTextField.delegate = self
     self.emailTextField.delegate = self
     self.nameTextField.delegate = self
-    maleButton.isSelected = true
-    femaleButton.isSelected = false
-    maleButton.alternateButton = [femaleButton]
-    femaleButton.alternateButton = [maleButton]
   }
   
-  @IBAction func onMaleButtonSelected(_ sender: Any) {
-    self.gender = "male"
-  }
   
   @objc func dismissKeyboard() {
     self.view.endEditing(true)
   }
-  
-  @IBAction func onFemaleButtonSelected(_ sender: Any) {
-    self.gender = "female"
-  }
+
   
   @IBAction func onSignUp(_ sender: Any) {
+    guard validate()else{return}
     let ref = Database.database().reference()
     if let email = self.emailTextField.text, let password = self.passwordTextField.text {
       Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
@@ -64,7 +52,7 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
           return
         }
         let consultantRef = Database.database().reference().child("consultant").child(uid)
-        let values: [String: String] = ["name": self.nameTextField.text ?? "defaultName", "dob": self.dobTextField.text ?? "defaultdob", "mobile": self.phoneNumberTextField.text ?? "defaultmobile", "gender": self.gender]
+        let values: [String: String] = ["name": self.nameTextField.text ?? "defaultName", "dob": self.dobTextField.text ?? "defaultdob", "mobile": self.phoneNumberTextField.text ?? "defaultmobile", "gender": self.genderTextField.text ?? "defaultGender"]
         consultantRef.updateChildValues(values)
       }
     }
@@ -142,5 +130,30 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {
     textField.resignFirstResponder()
     return true
+  }
+  
+  func validate()-> Bool{
+    
+    //add any condtion specific to element
+    guard let name = nameTextField.text , !name.isEmpty else {return false}
+    
+    guard let email = emailTextField.text, !email.isEmpty, email.contains("@"), email.contains(".") else{return false}
+    
+    guard let phone = phoneNumberTextField.text, !phone.isEmpty else {return false}
+    
+    guard let dob = dobTextField.text, !dob.isEmpty else {return false}
+    
+    guard let gender = genderTextField.text, !gender.isEmpty else{return false}
+    
+    guard let password = passwordTextField.text, !password.isEmpty else{
+      return false
+    }
+    
+    return true
+  }
+  
+  @IBAction func loginClicked(_ sender: UIButton) {
+    self.resignFirstResponder()
+    self.dismiss(animated: true, completion: nil)
   }
 }

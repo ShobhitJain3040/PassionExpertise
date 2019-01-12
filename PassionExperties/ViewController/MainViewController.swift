@@ -10,10 +10,15 @@ import UIKit
 
 class MainViewController: UIViewController {
 
+  
+  @IBOutlet weak var consultantButton: UIButton!
+  @IBOutlet weak var dremarButton: UIButton!
+  @IBOutlet weak var letStart: GradientButton!
+
+  
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        self.letStart.layer.cornerRadius = 10
     }
   
   
@@ -27,4 +32,15 @@ class MainViewController: UIViewController {
     self.navigationController?.setNavigationBarHidden(false, animated: false)
   }
 
+  @IBAction func pressDremarButton(_ sender: Any) {
+    self.dremarButton.setImage(UIImage(named: "dreamerIconSelected"), for: .normal)
+    self.consultantButton.setImage(UIImage(named: "consultantIcon"), for: .normal)
+  }
+  
+  @IBAction func pressConsultantButton(_ sender: Any) {
+    self.consultantButton.setImage(UIImage(named: "consultantIconSelected"), for: .normal)
+    self.dremarButton.setImage(UIImage(named: "dreamerIcon"), for: .normal)
+    
+  }
+  
 }
