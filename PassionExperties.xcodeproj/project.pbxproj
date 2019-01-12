@@ -51,7 +51,7 @@
 		1187EFF921E9E255006F1940 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EFF421E9E255006F1940 /* ProgressHud.swift */; };
 		1187EFFA21E9E255006F1940 /* SwiftLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EFF521E9E255006F1940 /* SwiftLog.swift */; };
 		1187EFFB21E9E255006F1940 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EFF621E9E255006F1940 /* Utilities.swift */; };
-		11E92D6521E9E7EA00104DFE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6421E9E7EA00104DFE /* LogInViewController.swift */; };
+		11E92D6521E9E7EA00104DFE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6421E9E7EA00104DFE /* MainViewController.swift */; };
 		557842ADB3B199433AFAA6FA /* Pods_PassionExperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */; };
 /* End PBXBuildFile section */
 
@@ -104,7 +104,7 @@
 		1187EFF521E9E255006F1940 /* SwiftLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLog.swift; sourceTree = "<group>"; };
 		1187EFF621E9E255006F1940 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		11E92D6221E9E3FF00104DFE /* PassionExperties-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassionExperties-Bridging-Header.h"; sourceTree = "<group>"; };
-		11E92D6421E9E7EA00104DFE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		11E92D6421E9E7EA00104DFE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		71280261078FE7A20E007807 /* Pods-PassionExperties.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.debug.xcconfig"; sourceTree = "<group>"; };
 		B709B8160223F32B3A72FE89 /* Pods-PassionExperties.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.release.xcconfig"; sourceTree = "<group>"; };
 		F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassionExperties.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -173,7 +173,7 @@
 		1187EF9D21E9E17A006F1940 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				11E92D6421E9E7EA00104DFE /* LogInViewController.swift */,
+				11E92D6421E9E7EA00104DFE /* MainViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -507,7 +507,7 @@
 				1187EFC821E9E220006F1940 /* FloatRatingView.swift in Sources */,
 				1187EFA721E9E214006F1940 /* InternetNotAvailable.swift in Sources */,
 				1187EF8821E9DF09006F1940 /* AppDelegate.swift in Sources */,
-				11E92D6521E9E7EA00104DFE /* LogInViewController.swift in Sources */,
+				11E92D6521E9E7EA00104DFE /* MainViewController.swift in Sources */,
 				1187EFF721E9E255006F1940 /* CryptoUtil.swift in Sources */,
 				1187EFDB21E9E220006F1940 /* NMRangeSlider.m in Sources */,
 				1187EF9021E9DF09006F1940 /* PassionExperties.xcdatamodeld in Sources */,
