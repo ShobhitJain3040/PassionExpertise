@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0851D7C9C4F9E55C047002E1C6E33735"
-               BuildableName = "Pods_PassionExperties.framework"
-               BlueprintName = "Pods-PassionExperties"
+               BlueprintIdentifier = "7ADFBBBAD9A3CBEBD90B2BF68509208A"
+               BuildableName = "MessageKitAssets.bundle"
+               BlueprintName = "MessageKit-MessageKitAssets"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0851D7C9C4F9E55C047002E1C6E33735"
-            BuildableName = "Pods_PassionExperties.framework"
-            BlueprintName = "Pods-PassionExperties"
+            BlueprintIdentifier = "7ADFBBBAD9A3CBEBD90B2BF68509208A"
+            BuildableName = "MessageKitAssets.bundle"
+            BlueprintName = "MessageKit-MessageKitAssets"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
