@@ -63,6 +63,8 @@
 		11E92D7B21EA17D300104DFE /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D7A21EA17D300104DFE /* NotificationCell.swift */; };
 		11E92D7D21EA212A00104DFE /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D7C21EA212A00104DFE /* BaseViewController.swift */; };
 		557842ADB3B199433AFAA6FA /* Pods_PassionExperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */; };
+		9333C57C21EA0A99004CFCB1 /* ConsultantSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333C57B21EA0A99004CFCB1 /* ConsultantSignUpViewController.swift */; };
+		9333C57E21EA0BF3004CFCB1 /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9333C57D21EA0BF3004CFCB1 /* RadioButton.swift */; };
 		93CBD35521E9EE760018075C /* Consultant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CBD35421E9EE760018075C /* Consultant.storyboard */; };
 		93CBD35721E9F5620018075C /* LoginConsultantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93CBD35621E9F5620018075C /* LoginConsultantViewController.swift */; };
 /* End PBXBuildFile section */
@@ -128,6 +130,8 @@
 		11E92D7A21EA17D300104DFE /* NotificationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
 		11E92D7C21EA212A00104DFE /* BaseViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		71280261078FE7A20E007807 /* Pods-PassionExperties.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.debug.xcconfig"; sourceTree = "<group>"; };
+		9333C57B21EA0A99004CFCB1 /* ConsultantSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantSignUpViewController.swift; sourceTree = "<group>"; };
+		9333C57D21EA0BF3004CFCB1 /* RadioButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		93CBD35421E9EE760018075C /* Consultant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Consultant.storyboard; sourceTree = "<group>"; };
 		93CBD35621E9F5620018075C /* LoginConsultantViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConsultantViewController.swift; sourceTree = "<group>"; };
 		B709B8160223F32B3A72FE89 /* Pods-PassionExperties.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.release.xcconfig"; sourceTree = "<group>"; };
@@ -202,6 +206,11 @@
 				11E92D6E21EA085100104DFE /* Dreamer */,
 				11E92D6421E9E7EA00104DFE /* MainViewController.swift */,
 				93CBD35621E9F5620018075C /* LoginConsultantViewController.swift */,
+				11E92D6821E9F17000104DFE /* DreamerLoginViewController.swift */,
+				11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */,
+				11E92D6C21E9F1AE00104DFE /* DreamerDashboardViewController.swift */,
+				9333C57B21EA0A99004CFCB1 /* ConsultantSignUpViewController.swift */,
+				9333C57D21EA0BF3004CFCB1 /* RadioButton.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -209,17 +218,10 @@
 		1187EF9E21E9E1A3006F1940 /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
-				1187EF9F21E9E1BE006F1940 /* Classes */,
+				9333C57F21EA2DE2004CFCB1 /* Classes */,
 				1187EF8E21E9DF09006F1940 /* PassionExperties.xcdatamodeld */,
 			);
 			path = CoreData;
-			sourceTree = "<group>";
-		};
-		1187EF9F21E9E1BE006F1940 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		1187EFA021E9E1CF006F1940 /* Storyboard */ = {
@@ -408,6 +410,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		9333C57F21EA2DE2004CFCB1 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -564,10 +573,13 @@
 				11E92D7B21EA17D300104DFE /* NotificationCell.swift in Sources */,
 				1187EFE721E9E234006F1940 /* ApiCall.swift in Sources */,
 				1187EFEA21E9E234006F1940 /* ResponseObject.swift in Sources */,
+				9333C57E21EA0BF3004CFCB1 /* RadioButton.swift in Sources */,
+				11E92D6D21E9F1AE00104DFE /* DreamerDashboardViewController.swift in Sources */,
 				11E92D6D21E9F1AE00104DFE /* DreamerHomeViewController.swift in Sources */,
 				1187EFC821E9E220006F1940 /* FloatRatingView.swift in Sources */,
 				1187EFA721E9E214006F1940 /* InternetNotAvailable.swift in Sources */,
 				1187EF8821E9DF09006F1940 /* AppDelegate.swift in Sources */,
+				9333C57C21EA0A99004CFCB1 /* ConsultantSignUpViewController.swift in Sources */,
 				11E92D6521E9E7EA00104DFE /* MainViewController.swift in Sources */,
 				1187EFF721E9E255006F1940 /* CryptoUtil.swift in Sources */,
 				93CBD35721E9F5620018075C /* LoginConsultantViewController.swift in Sources */,
