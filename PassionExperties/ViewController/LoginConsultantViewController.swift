@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import FirebaseDatabase
+import FirebaseAuth
 
 class LoginConsultantViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var userNameTextField: UITextField!
@@ -61,9 +63,20 @@ class LoginConsultantViewController: UIViewController, UITextFieldDelegate {
   }
   
   @IBAction func onLoginButtonAction(_ sender: Any) {
+    if let userName = self.userNameTextField.text, let password = self.passwordTextField.text {
+      Auth.auth().signIn(withEmail: userName, password: password) { (authDataResult, error) in
+        if error != nil {
+          print("Error login in = \(error)")
+          return
+        }
+        
+        print("Login in success")
+      }
+    }
   }
   
   @IBAction func onSignUpButtonAction(_ sender: Any) {
+    
   }
   
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {

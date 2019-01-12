@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import FirebaseDatabase
+import FirebaseAuth
 
 class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
   let datePicker = UIDatePicker()
@@ -20,6 +22,7 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
   @IBOutlet weak var nameTextField: UITextField!
   @IBOutlet weak var maleButton: RadioButton!
   @IBOutlet weak var femaleButton: RadioButton!
+  var gender = "male"
   
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -38,6 +41,7 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
   }
   
   @IBAction func onMaleButtonSelected(_ sender: Any) {
+    self.gender = "male"
   }
   
   @objc func dismissKeyboard() {
@@ -45,9 +49,25 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
   }
   
   @IBAction func onFemaleButtonSelected(_ sender: Any) {
+    self.gender = "female"
   }
   
   @IBAction func onSignUp(_ sender: Any) {
+    let ref = Database.database().reference()
+    if let email = self.emailTextField.text, let password = self.passwordTextField.text {
+      Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
+        if error != nil {
+          print("Error = \(error)")
+          return
+        }
+        guard let uid = user?.user.uid else {
+          return
+        }
+        let consultantRef = Database.database().reference().child("consultant").child(uid)
+        let values: [String: String] = ["name": self.nameTextField.text ?? "defaultName", "dob": self.dobTextField.text ?? "defaultdob", "mobile": self.phoneNumberTextField.text ?? "defaultmobile", "gender": self.gender]
+        consultantRef.updateChildValues(values)
+      }
+    }
   }
   
   func textFieldDidBeginEditing(_ textField: UITextField) {

@@ -70,6 +70,9 @@ PODS:
   - GTMSessionFetcher/Core (1.2.1)
   - leveldb-library (1.20)
   - MBProgressHUD (1.1.0)
+  - MessageInputBar/Core (0.4.1)
+  - MessageKit (2.0.0):
+    - MessageInputBar/Core
   - nanopb (0.3.901):
     - nanopb/decode (= 0.3.901)
     - nanopb/encode (= 0.3.901)
@@ -83,6 +86,7 @@ DEPENDENCIES:
   - Firebase/Database
   - Firebase/Storage
   - MBProgressHUD (~> 1.1.0)
+  - MessageKit
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
@@ -100,6 +104,8 @@ SPEC REPOS:
     - GTMSessionFetcher
     - leveldb-library
     - MBProgressHUD
+    - MessageInputBar
+    - MessageKit
     - nanopb
 
 SPEC CHECKSUMS:
@@ -117,8 +123,10 @@ SPEC CHECKSUMS:
   GTMSessionFetcher: 32aeca0aa144acea523e1c8e053089dec2cb98ca
   leveldb-library: 08cba283675b7ed2d99629a4bc5fd052cd2bb6a5
   MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
+  MessageInputBar: e81c7535347f1f7b923de7080409a535a004b6e4
+  MessageKit: 29c1c87e5a396d2ca7a3f712e5171dc9aba42a1e
   nanopb: 2901f78ea1b7b4015c860c2fdd1ea2fee1a18d48
 
-PODFILE CHECKSUM: 9681f509cfb8ad9bbc94fa4e24a10cf8a68ce24d
+PODFILE CHECKSUM: 0a13f9a24277292932acf4fdbec7de45d0a322d5
 
 COCOAPODS: 1.5.3

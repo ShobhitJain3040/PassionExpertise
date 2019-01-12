@@ -66,9 +66,9 @@
 		11E92DBD21EA549600104DFE /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DAE21EA549600104DFE /* RadioButton.swift */; };
 		11E92DBE21EA549600104DFE /* DreamerFollowerListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DB021EA549600104DFE /* DreamerFollowerListCell.swift */; };
 		11E92DBF21EA549600104DFE /* NotificationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DB121EA549600104DFE /* NotificationCell.swift */; };
-		11E92DC121EA54D600104DFE /* DreamerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11E92DC021EA54D500104DFE /* DreamerStoryboard.storyboard */; };
 		557842ADB3B199433AFAA6FA /* Pods_PassionExperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */; };
 		930ED9B921EA4557008C07E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 930ED9B821EA4557008C07E8 /* GoogleService-Info.plist */; };
+		930ED9BB21EA5C30008C07E8 /* DreamerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930ED9BA21EA5C30008C07E8 /* DreamerStoryboard.storyboard */; };
 		93CBD35521E9EE760018075C /* Consultant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CBD35421E9EE760018075C /* Consultant.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -136,9 +136,9 @@
 		11E92DAE21EA549600104DFE /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
 		11E92DB021EA549600104DFE /* DreamerFollowerListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamerFollowerListCell.swift; sourceTree = "<group>"; };
 		11E92DB121EA549600104DFE /* NotificationCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NotificationCell.swift; sourceTree = "<group>"; };
-		11E92DC021EA54D500104DFE /* DreamerStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = DreamerStoryboard.storyboard; path = ../../../../PassionExperties/PassionExperties/Storyboard/DreamerStoryboard.storyboard; sourceTree = "<group>"; };
 		71280261078FE7A20E007807 /* Pods-PassionExperties.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.debug.xcconfig"; sourceTree = "<group>"; };
 		930ED9B821EA4557008C07E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		930ED9BA21EA5C30008C07E8 /* DreamerStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DreamerStoryboard.storyboard; sourceTree = "<group>"; };
 		93CBD35421E9EE760018075C /* Consultant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Consultant.storyboard; sourceTree = "<group>"; };
 		B709B8160223F32B3A72FE89 /* Pods-PassionExperties.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.release.xcconfig"; sourceTree = "<group>"; };
 		F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassionExperties.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -217,7 +217,7 @@
 		1187EFA021E9E1CF006F1940 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				11E92DC021EA54D500104DFE /* DreamerStoryboard.storyboard */,
+				930ED9BA21EA5C30008C07E8 /* DreamerStoryboard.storyboard */,
 				1187EF8B21E9DF09006F1940 /* Main.storyboard */,
 				93CBD35421E9EE760018075C /* Consultant.storyboard */,
 			);
@@ -489,6 +489,7 @@
 				1187EFD321E9E220006F1940 /* slider-default7-handle.png in Resources */,
 				1187EF9521E9DF0C006F1940 /* LaunchScreen.storyboard in Resources */,
 				1187EFCD21E9E220006F1940 /* slider-default-track.png in Resources */,
+				930ED9BB21EA5C30008C07E8 /* DreamerStoryboard.storyboard in Resources */,
 				1187EFCB21E9E220006F1940 /* slider-default-handle.png in Resources */,
 				93CBD35521E9EE760018075C /* Consultant.storyboard in Resources */,
 				1187EFC921E9E220006F1940 /* slider-default-handle-highlighted.png in Resources */,
@@ -501,7 +502,6 @@
 				1187EFDA21E9E220006F1940 /* slider-default7-trackCrossedOver@2x.png in Resources */,
 				1187EF9221E9DF0C006F1940 /* Assets.xcassets in Resources */,
 				1187EFD521E9E220006F1940 /* slider-default7-track.png in Resources */,
-				11E92DC121EA54D600104DFE /* DreamerStoryboard.storyboard in Resources */,
 				1187EF8D21E9DF09006F1940 /* Main.storyboard in Resources */,
 				1187EFCE21E9E220006F1940 /* slider-default-track@2x.png in Resources */,
 				1187EFCA21E9E220006F1940 /* slider-default-handle-highlighted@2x.png in Resources */,
@@ -544,6 +544,8 @@
 				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
 				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
 				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageInputBar/MessageInputBar.framework",
+				"${BUILT_PRODUCTS_DIR}/MessageKit/MessageKit.framework",
 				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
 				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
 			);
@@ -553,6 +555,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageInputBar.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MessageKit.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
 			);
