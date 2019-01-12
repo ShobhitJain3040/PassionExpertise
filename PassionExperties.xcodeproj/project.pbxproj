@@ -57,6 +57,7 @@
 		11E92D6B21E9F19100104DFE /* DreamerSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */; };
 		11E92D6D21E9F1AE00104DFE /* DreamerDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6C21E9F1AE00104DFE /* DreamerDashboardViewController.swift */; };
 		557842ADB3B199433AFAA6FA /* Pods_PassionExperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */; };
+		93CBD35521E9EE760018075C /* Consultant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CBD35421E9EE760018075C /* Consultant.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -114,6 +115,7 @@
 		11E92D6A21E9F19100104DFE /* DreamerSignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerSignUpViewController.swift; sourceTree = "<group>"; };
 		11E92D6C21E9F1AE00104DFE /* DreamerDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamerDashboardViewController.swift; sourceTree = "<group>"; };
 		71280261078FE7A20E007807 /* Pods-PassionExperties.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.debug.xcconfig"; sourceTree = "<group>"; };
+		93CBD35421E9EE760018075C /* Consultant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Consultant.storyboard; sourceTree = "<group>"; };
 		B709B8160223F32B3A72FE89 /* Pods-PassionExperties.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.release.xcconfig"; sourceTree = "<group>"; };
 		F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassionExperties.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -209,6 +211,7 @@
 			isa = PBXGroup;
 			children = (
 				1187EF8B21E9DF09006F1940 /* Main.storyboard */,
+				93CBD35421E9EE760018075C /* Consultant.storyboard */,
 				11E92D6621E9EE5400104DFE /* DreamerStoryboard.storyboard */,
 			);
 			path = Storyboard;
@@ -436,6 +439,7 @@
 				1187EF9521E9DF0C006F1940 /* LaunchScreen.storyboard in Resources */,
 				1187EFCD21E9E220006F1940 /* slider-default-track.png in Resources */,
 				1187EFCB21E9E220006F1940 /* slider-default-handle.png in Resources */,
+				93CBD35521E9EE760018075C /* Consultant.storyboard in Resources */,
 				1187EFC921E9E220006F1940 /* slider-default-handle-highlighted.png in Resources */,
 				1187EFD621E9E220006F1940 /* slider-default7-track@2x.png in Resources */,
 				1187EFD721E9E220006F1940 /* slider-default7-trackBackground.png in Resources */,
