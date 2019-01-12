@@ -17,43 +17,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uhH-zD-VZZ">
-                                <rect key="frame" x="10" y="109.5" width="355" height="20.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="HoG-Zk-WVh">
-                                <rect key="frame" x="30" y="213.5" width="315" height="260"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="HoG-Zk-WVh">
+                                <rect key="frame" x="30" y="283.5" width="315" height="120"/>
                                 <subviews>
-                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ht3-IP-jBE">
-                                        <rect key="frame" x="0.0" y="0.0" width="315" height="130"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ht3-IP-jBE">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3t-Qy-cY9">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="130"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3t-Qy-cY9">
+                                                <rect key="frame" x="0.0" y="0.0" width="81" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="OaB-EL-54m">
-                                                <rect key="frame" x="42" y="0.0" width="273" height="130"/>
+                                                <rect key="frame" x="91" y="0.0" width="224" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="itg-4O-Arl"/>
+                                        </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F92-Wl-HVS">
-                                        <rect key="frame" x="0.0" y="130" width="315" height="130"/>
+                                        <rect key="frame" x="0.0" y="70" width="315" height="50"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly5-lv-fFo">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="130"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Password" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ly5-lv-fFo">
+                                                <rect key="frame" x="0.0" y="0.0" width="91" height="50"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FBg-73-buN">
-                                                <rect key="frame" x="42" y="0.0" width="273" height="130"/>
+                                                <rect key="frame" x="91" y="0.0" width="224" height="50"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
@@ -62,27 +59,43 @@
                                     </stackView>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="F92-Wl-HVS" firstAttribute="top" secondItem="ht3-IP-jBE" secondAttribute="bottom" id="1Fp-lj-qTW"/>
                                     <constraint firstItem="F92-Wl-HVS" firstAttribute="centerX" secondItem="HoG-Zk-WVh" secondAttribute="centerX" id="2Bj-l6-ykr"/>
                                     <constraint firstAttribute="trailing" secondItem="ht3-IP-jBE" secondAttribute="trailing" id="6Hl-bS-nhX"/>
                                     <constraint firstItem="F92-Wl-HVS" firstAttribute="leading" secondItem="HoG-Zk-WVh" secondAttribute="leading" id="74e-eN-WPd"/>
-                                    <constraint firstAttribute="height" constant="260" id="Gjo-4X-stY"/>
                                     <constraint firstItem="ht3-IP-jBE" firstAttribute="leading" secondItem="HoG-Zk-WVh" secondAttribute="leading" id="Irp-3j-kX6"/>
                                     <constraint firstItem="ht3-IP-jBE" firstAttribute="centerX" secondItem="HoG-Zk-WVh" secondAttribute="centerX" id="PoI-r3-QHw"/>
+                                    <constraint firstItem="OaB-EL-54m" firstAttribute="width" secondItem="FBg-73-buN" secondAttribute="width" id="SoN-ne-vSs"/>
                                     <constraint firstAttribute="trailing" secondItem="F92-Wl-HVS" secondAttribute="trailing" id="hf8-m9-Teq"/>
                                     <constraint firstItem="ht3-IP-jBE" firstAttribute="height" secondItem="F92-Wl-HVS" secondAttribute="height" id="hn2-ef-JUg"/>
                                 </constraints>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a4t-Ta-iwi">
+                                <rect key="frame" x="157.5" y="438" width="60" height="40"/>
+                                <color key="backgroundColor" red="0.25882352939999997" green="0.64705882349999999" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="60" id="0Ts-Pa-LnR"/>
+                                    <constraint firstAttribute="height" constant="40" id="3hb-uY-Lxb"/>
+                                </constraints>
+                                <state key="normal" title="Login">
+                                    <color key="titleColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="X0u-U4-CZk">
+                                <rect key="frame" x="20" y="617" width="335" height="30"/>
+                                <state key="normal" title="Sign Up"/>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="HoG-Zk-WVh" firstAttribute="centerY" secondItem="Omq-f5-nsX" secondAttribute="centerY" id="5F5-so-m2U"/>
-                            <constraint firstItem="Omq-f5-nsX" firstAttribute="trailing" secondItem="uhH-zD-VZZ" secondAttribute="trailing" constant="10" id="5gA-lZ-8yD"/>
+                            <constraint firstItem="a4t-Ta-iwi" firstAttribute="centerX" secondItem="HoG-Zk-WVh" secondAttribute="centerX" id="6fT-oc-uhk"/>
+                            <constraint firstItem="X0u-U4-CZk" firstAttribute="centerX" secondItem="Omq-f5-nsX" secondAttribute="centerX" id="Dqr-FG-gAK"/>
+                            <constraint firstItem="Omq-f5-nsX" firstAttribute="trailing" secondItem="X0u-U4-CZk" secondAttribute="trailing" constant="20" id="JN8-EP-klH"/>
+                            <constraint firstItem="Omq-f5-nsX" firstAttribute="bottom" secondItem="X0u-U4-CZk" secondAttribute="bottom" constant="20" id="Wvd-D7-bfV"/>
                             <constraint firstItem="Omq-f5-nsX" firstAttribute="trailing" secondItem="HoG-Zk-WVh" secondAttribute="trailing" constant="30" id="hkj-Bh-igZ"/>
-                            <constraint firstItem="uhH-zD-VZZ" firstAttribute="centerX" secondItem="Omq-f5-nsX" secondAttribute="centerX" id="nRA-zO-mId"/>
+                            <constraint firstItem="X0u-U4-CZk" firstAttribute="leading" secondItem="Omq-f5-nsX" secondAttribute="leading" constant="20" id="i9U-zI-QHE"/>
+                            <constraint firstItem="a4t-Ta-iwi" firstAttribute="top" secondItem="HoG-Zk-WVh" secondAttribute="bottom" constant="34.5" id="jfw-aj-eCu"/>
                             <constraint firstItem="HoG-Zk-WVh" firstAttribute="leading" secondItem="Omq-f5-nsX" secondAttribute="leading" constant="30" id="pen-Ep-ZGN"/>
-                            <constraint firstItem="HoG-Zk-WVh" firstAttribute="top" secondItem="uhH-zD-VZZ" secondAttribute="bottom" constant="83.5" id="rlb-y1-eAw"/>
-                            <constraint firstItem="uhH-zD-VZZ" firstAttribute="leading" secondItem="Omq-f5-nsX" secondAttribute="leading" constant="10" id="uAl-9S-6J3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Omq-f5-nsX"/>
                     </view>

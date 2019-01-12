@@ -17,11 +17,10 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PassionExperties" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB0-UG-qlm">
-                                <rect key="frame" x="78" y="325.5" width="219" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PassionExperties" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hB0-UG-qlm">
+                                <rect key="frame" x="20" y="325.5" width="335" height="36"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="36" id="4gD-yx-fQe"/>
-                                    <constraint firstAttribute="width" constant="219" id="onI-sq-XxI"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle0"/>
                                 <nil key="highlightedColor"/>
@@ -29,6 +28,8 @@
                         </subviews>
                         <color key="backgroundColor" red="0.80000000000000004" green="0.67450980390000004" blue="0.31372549020000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hB0-UG-qlm" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0Hh-Nd-YEm"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="hB0-UG-qlm" secondAttribute="trailing" constant="20" id="9zu-Wm-zWN"/>
                             <constraint firstItem="hB0-UG-qlm" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="diA-yC-G2d"/>
                             <constraint firstItem="hB0-UG-qlm" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="xEa-74-VzA"/>
                         </constraints>
