@@ -14,7 +14,6 @@ class DreamerNotificationViewController: UIViewController, UITableViewDelegate, 
   
   override func viewDidLoad() {
     super.viewDidLoad()
-    self.title = "Notifications"
     self.tableView.estimatedRowHeight = 400
     self.tableView.tableFooterView = UIView()
   }
