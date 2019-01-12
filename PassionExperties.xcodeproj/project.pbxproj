@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1187EF8821E9DF09006F1940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EF8721E9DF09006F1940 /* AppDelegate.swift */; };
-		1187EF8A21E9DF09006F1940 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EF8921E9DF09006F1940 /* ViewController.swift */; };
 		1187EF8D21E9DF09006F1940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1187EF8B21E9DF09006F1940 /* Main.storyboard */; };
 		1187EF9021E9DF09006F1940 /* PassionExperties.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1187EF8E21E9DF09006F1940 /* PassionExperties.xcdatamodeld */; };
 		1187EF9221E9DF0C006F1940 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1187EF9121E9DF0C006F1940 /* Assets.xcassets */; };
@@ -52,16 +51,16 @@
 		1187EFF921E9E255006F1940 /* ProgressHud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EFF421E9E255006F1940 /* ProgressHud.swift */; };
 		1187EFFA21E9E255006F1940 /* SwiftLog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EFF521E9E255006F1940 /* SwiftLog.swift */; };
 		1187EFFB21E9E255006F1940 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EFF621E9E255006F1940 /* Utilities.swift */; };
+		11E92D6521E9E7EA00104DFE /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92D6421E9E7EA00104DFE /* LogInViewController.swift */; };
 		557842ADB3B199433AFAA6FA /* Pods_PassionExperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1187EF8421E9DF09006F1940 /* PassionExperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassionExperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1187EF8721E9DF09006F1940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1187EF8921E9DF09006F1940 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1187EF8C21E9DF09006F1940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1187EF8F21E9DF09006F1940 /* PassionExperties.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PassionExperties.xcdatamodel; sourceTree = "<group>"; };
-		1187EF9121E9DF0C006F1940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1187EF9121E9DF0C006F1940 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = "../New Groupsse/Assets.xcassets"; sourceTree = "<group>"; };
 		1187EF9421E9DF0C006F1940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1187EF9621E9DF0C006F1940 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1187EFA221E9E206006F1940 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
@@ -105,6 +104,7 @@
 		1187EFF521E9E255006F1940 /* SwiftLog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftLog.swift; sourceTree = "<group>"; };
 		1187EFF621E9E255006F1940 /* Utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		11E92D6221E9E3FF00104DFE /* PassionExperties-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "PassionExperties-Bridging-Header.h"; sourceTree = "<group>"; };
+		11E92D6421E9E7EA00104DFE /* LogInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
 		71280261078FE7A20E007807 /* Pods-PassionExperties.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.debug.xcconfig"; sourceTree = "<group>"; };
 		B709B8160223F32B3A72FE89 /* Pods-PassionExperties.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.release.xcconfig"; sourceTree = "<group>"; };
 		F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassionExperties.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -144,6 +144,8 @@
 		1187EF8621E9DF09006F1940 /* PassionExperties */ = {
 			isa = PBXGroup;
 			children = (
+				1187EF9C21E9E0D5006F1940 /* AppDelegate */,
+				11E92D6321E9E6A500104DFE /* Assets */,
 				1187EFF121E9E255006F1940 /* Utilities */,
 				1187EFEC21E9E240006F1940 /* Singleton */,
 				1187EFE121E9E234006F1940 /* Network */,
@@ -151,11 +153,9 @@
 				1187EFA921E9E220006F1940 /* CustomView */,
 				1187EFA421E9E214006F1940 /* InternetNotAvailable */,
 				1187EFA121E9E206006F1940 /* Constants */,
-				1187EFA021E9E1CF006F1940 /* Storyboard */,
 				1187EF9E21E9E1A3006F1940 /* CoreData */,
 				1187EF9D21E9E17A006F1940 /* ViewController */,
-				1187EF9C21E9E0D5006F1940 /* AppDelegate */,
-				1187EF9121E9DF0C006F1940 /* Assets.xcassets */,
+				1187EFA021E9E1CF006F1940 /* Storyboard */,
 				1187EF9321E9DF0C006F1940 /* LaunchScreen.storyboard */,
 				1187EF9621E9DF0C006F1940 /* Info.plist */,
 			);
@@ -173,7 +173,7 @@
 		1187EF9D21E9E17A006F1940 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				1187EF8921E9DF09006F1940 /* ViewController.swift */,
+				11E92D6421E9E7EA00104DFE /* LogInViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -331,6 +331,14 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
+		11E92D6321E9E6A500104DFE /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				1187EF9121E9DF0C006F1940 /* Assets.xcassets */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		2240CAD53CD7A5C00BE390DF /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -486,7 +494,6 @@
 				1187EFEF21E9E240006F1940 /* DataStore.swift in Sources */,
 				1187EFFB21E9E255006F1940 /* Utilities.swift in Sources */,
 				1187EFE821E9E234006F1940 /* NetworkManager.swift in Sources */,
-				1187EF8A21E9DF09006F1940 /* ViewController.swift in Sources */,
 				1187EFF021E9E240006F1940 /* InternetManager.swift in Sources */,
 				1187EFC621E9E220006F1940 /* ErrorView.swift in Sources */,
 				1187EFF921E9E255006F1940 /* ProgressHud.swift in Sources */,
@@ -500,6 +507,7 @@
 				1187EFC821E9E220006F1940 /* FloatRatingView.swift in Sources */,
 				1187EFA721E9E214006F1940 /* InternetNotAvailable.swift in Sources */,
 				1187EF8821E9DF09006F1940 /* AppDelegate.swift in Sources */,
+				11E92D6521E9E7EA00104DFE /* LogInViewController.swift in Sources */,
 				1187EFF721E9E255006F1940 /* CryptoUtil.swift in Sources */,
 				1187EFDB21E9E220006F1940 /* NMRangeSlider.m in Sources */,
 				1187EF9021E9DF09006F1940 /* PassionExperties.xcdatamodeld in Sources */,
