@@ -8,14 +8,9 @@
 
 import UIKit
 
-class DreamerDashboardViewController: UIViewController {
+class DreamerHomeViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-   self.title = "Dashboard"
     }
-    
-
-  
-
 }
