@@ -16,6 +16,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   var window: UIWindow?
 
 
+  func replaceStoryboard(_ storyboarName: String) {
+    let initialController = UIStoryboard(name: storyboarName, bundle: nil).instantiateInitialViewController()
+    self.window?.rootViewController = initialController
+  }
+  
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     FirebaseApp.configure()
