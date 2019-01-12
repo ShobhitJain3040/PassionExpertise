@@ -253,7 +253,7 @@ class Utilities {
   ///  - message: message as String?
   ///  - firstAction: firstAction as UIAlertAction?
   ///  - secondAction: secondAction as UIAlertAction?
-  static func showActionSheet(_ title:String? = "", message: String, firstAction: UIAlertAction? = nil , secondAction: UIAlertAction? = nil, thirdAction: UIAlertAction? = nil, forthAction: UIAlertAction? = nil, cancelAction: UIAlertAction? = nil)  {
+  static func showActionSheet(_ title:String? = "", message: String, firstAction: UIAlertAction? = nil , secondAction: UIAlertAction? = nil, thirdAction: UIAlertAction? = nil, forthAction: UIAlertAction? = nil, cancelAction: UIAlertAction? = nil, viewController: UIViewController)  {
     
     let actionSheet = UIAlertController(title: title, message: message, preferredStyle: UIAlertController.Style.actionSheet)
     
@@ -284,7 +284,7 @@ class Utilities {
     actionSheet.addAction(cancelActionToAdd)
     
     OperationQueue.main.addOperation {
-      UIApplication.shared.keyWindow?.rootViewController?.present(actionSheet, animated: true) {
+      viewController.present(actionSheet, animated: true) {
       }
     }
   }

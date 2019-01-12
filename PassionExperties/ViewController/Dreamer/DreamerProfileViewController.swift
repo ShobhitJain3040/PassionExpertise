@@ -63,7 +63,7 @@ class DreamerProfileViewController: BaseViewController, UIImagePickerControllerD
         self.present(imagePickerViewController, animated: true, completion: nil)
     }
     
-    Utilities.showActionSheet("Upload Image", message: "Select File to upload", firstAction: action1 , secondAction: action2)
+    Utilities.showActionSheet("Upload Image", message: "Select File to upload", firstAction: action1 , secondAction: action2, viewController: self)
   }
   
   /// set profile image
