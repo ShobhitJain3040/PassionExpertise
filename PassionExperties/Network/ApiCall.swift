@@ -39,4 +39,12 @@ open class ApiCall {
     return NetworkManager.makeRequest(requestParameter, success: success, failure: failure)
   }
   
+  @discardableResult
+  public static func testData(success: @escaping SuccessClosure, failure: @escaping FailureClosure) -> Request {
+    let requestParameter = RequestParameter.createRequestParameter("https://596e9465.ngrok.io/savedcard/savedcardOpenAPIService/v2/delete/savedcard/custId/mId/cardId", method: .get, headers: nil, parameters: nil)
+    return NetworkManager.makeRequest(requestParameter, success: success, failure: failure)
+  }
+  
+  
+  
 }

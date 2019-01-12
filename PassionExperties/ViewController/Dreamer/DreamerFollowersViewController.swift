@@ -14,6 +14,7 @@ class DreamerFollowersViewController: BaseViewController, UITableViewDelegate, U
   
   override func viewDidLoad() {
         super.viewDidLoad()
+    self.getConsultantData()
     
     }
   
@@ -21,7 +22,11 @@ class DreamerFollowersViewController: BaseViewController, UITableViewDelegate, U
     if  !InternetManager.sharedInstance.isReachable {
       self.addInternetNotAvailable()
     } else {
-      
+      ApiCall.testData(success: { (data) -> (Void) in
+        debugLog("data")
+      }) { (error, data, statusCode) -> (Void) in
+        debugLog("data")
+      }
     }
   }
   
@@ -44,7 +49,7 @@ class DreamerFollowersViewController: BaseViewController, UITableViewDelegate, U
   }
   
   func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-    return 130
+    return 150
   }
 
 }

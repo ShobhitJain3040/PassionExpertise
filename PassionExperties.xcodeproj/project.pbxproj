@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11004F2921EA69400048F2F5 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11004F2821EA69400048F2F5 /* Login.storyboard */; };
+		11004F2B21EA6AC40048F2F5 /* ConsultantDashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11004F2A21EA6AC40048F2F5 /* ConsultantDashboardViewController.swift */; };
 		1187EF8821E9DF09006F1940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EF8721E9DF09006F1940 /* AppDelegate.swift */; };
 		1187EF8D21E9DF09006F1940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1187EF8B21E9DF09006F1940 /* Main.storyboard */; };
 		1187EF9021E9DF09006F1940 /* PassionExperties.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1187EF8E21E9DF09006F1940 /* PassionExperties.xcdatamodeld */; };
@@ -57,10 +59,8 @@
 		11E92DB421EA549600104DFE /* DreamerChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DA521EA549600104DFE /* DreamerChatViewController.swift */; };
 		11E92DB521EA549600104DFE /* DreamerFollowersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DA621EA549600104DFE /* DreamerFollowersViewController.swift */; };
 		11E92DB621EA549600104DFE /* DreamerHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DA721EA549600104DFE /* DreamerHomeViewController.swift */; };
-		11E92DB721EA549600104DFE /* DreamerLoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DA821EA549600104DFE /* DreamerLoginViewController.swift */; };
 		11E92DB821EA549600104DFE /* DreamerNotificationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DA921EA549600104DFE /* DreamerNotificationViewController.swift */; };
 		11E92DB921EA549600104DFE /* DreamerProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DAA21EA549600104DFE /* DreamerProfileViewController.swift */; };
-		11E92DBA21EA549600104DFE /* DreamerSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DAB21EA549600104DFE /* DreamerSignUpViewController.swift */; };
 		11E92DBB21EA549600104DFE /* LoginConsultantViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DAC21EA549600104DFE /* LoginConsultantViewController.swift */; };
 		11E92DBC21EA549600104DFE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DAD21EA549600104DFE /* MainViewController.swift */; };
 		11E92DBD21EA549600104DFE /* RadioButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11E92DAE21EA549600104DFE /* RadioButton.swift */; };
@@ -73,6 +73,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11004F2821EA69400048F2F5 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		11004F2A21EA6AC40048F2F5 /* ConsultantDashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultantDashboardViewController.swift; sourceTree = "<group>"; };
 		1187EF8421E9DF09006F1940 /* PassionExperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassionExperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1187EF8721E9DF09006F1940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1187EF8C21E9DF09006F1940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -127,10 +129,8 @@
 		11E92DA521EA549600104DFE /* DreamerChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamerChatViewController.swift; sourceTree = "<group>"; };
 		11E92DA621EA549600104DFE /* DreamerFollowersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamerFollowersViewController.swift; sourceTree = "<group>"; };
 		11E92DA721EA549600104DFE /* DreamerHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamerHomeViewController.swift; sourceTree = "<group>"; };
-		11E92DA821EA549600104DFE /* DreamerLoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamerLoginViewController.swift; sourceTree = "<group>"; };
 		11E92DA921EA549600104DFE /* DreamerNotificationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamerNotificationViewController.swift; sourceTree = "<group>"; };
 		11E92DAA21EA549600104DFE /* DreamerProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamerProfileViewController.swift; sourceTree = "<group>"; };
-		11E92DAB21EA549600104DFE /* DreamerSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DreamerSignUpViewController.swift; sourceTree = "<group>"; };
 		11E92DAC21EA549600104DFE /* LoginConsultantViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginConsultantViewController.swift; sourceTree = "<group>"; };
 		11E92DAD21EA549600104DFE /* MainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		11E92DAE21EA549600104DFE /* RadioButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadioButton.swift; sourceTree = "<group>"; };
@@ -220,6 +220,7 @@
 				930ED9BA21EA5C30008C07E8 /* DreamerStoryboard.storyboard */,
 				1187EF8B21E9DF09006F1940 /* Main.storyboard */,
 				93CBD35421E9EE760018075C /* Consultant.storyboard */,
+				11004F2821EA69400048F2F5 /* Login.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -365,13 +366,14 @@
 		11E92DA121EA549600104DFE /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				11E92DA421EA549600104DFE /* Dreamer */,
+				11E92DAF21EA549600104DFE /* TableViewCell */,
 				11E92DA221EA549600104DFE /* BaseViewController.swift */,
 				11E92DA321EA549600104DFE /* ConsultantSignUpViewController.swift */,
-				11E92DA421EA549600104DFE /* Dreamer */,
 				11E92DAC21EA549600104DFE /* LoginConsultantViewController.swift */,
 				11E92DAD21EA549600104DFE /* MainViewController.swift */,
 				11E92DAE21EA549600104DFE /* RadioButton.swift */,
-				11E92DAF21EA549600104DFE /* TableViewCell */,
+				11004F2A21EA6AC40048F2F5 /* ConsultantDashboardViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -382,10 +384,8 @@
 				11E92DA521EA549600104DFE /* DreamerChatViewController.swift */,
 				11E92DA621EA549600104DFE /* DreamerFollowersViewController.swift */,
 				11E92DA721EA549600104DFE /* DreamerHomeViewController.swift */,
-				11E92DA821EA549600104DFE /* DreamerLoginViewController.swift */,
 				11E92DA921EA549600104DFE /* DreamerNotificationViewController.swift */,
 				11E92DAA21EA549600104DFE /* DreamerProfileViewController.swift */,
-				11E92DAB21EA549600104DFE /* DreamerSignUpViewController.swift */,
 			);
 			path = Dreamer;
 			sourceTree = "<group>";
@@ -501,6 +501,7 @@
 				1187EFD421E9E220006F1940 /* slider-default7-handle@2x.png in Resources */,
 				1187EFDA21E9E220006F1940 /* slider-default7-trackCrossedOver@2x.png in Resources */,
 				1187EF9221E9DF0C006F1940 /* Assets.xcassets in Resources */,
+				11004F2921EA69400048F2F5 /* Login.storyboard in Resources */,
 				1187EFD521E9E220006F1940 /* slider-default7-track.png in Resources */,
 				1187EF8D21E9DF09006F1940 /* Main.storyboard in Resources */,
 				1187EFCE21E9E220006F1940 /* slider-default-track@2x.png in Resources */,
@@ -575,7 +576,6 @@
 				1187EFE921E9E234006F1940 /* RequestParameter.swift in Sources */,
 				11E92DB521EA549600104DFE /* DreamerFollowersViewController.swift in Sources */,
 				1187EFEF21E9E240006F1940 /* DataStore.swift in Sources */,
-				11E92DBA21EA549600104DFE /* DreamerSignUpViewController.swift in Sources */,
 				1187EFFB21E9E255006F1940 /* Utilities.swift in Sources */,
 				11E92DB221EA549600104DFE /* BaseViewController.swift in Sources */,
 				1187EFE821E9E234006F1940 /* NetworkManager.swift in Sources */,
@@ -592,6 +592,7 @@
 				1187EFDF21E9E22D006F1940 /* AppRecord.swift in Sources */,
 				1187EFFA21E9E255006F1940 /* SwiftLog.swift in Sources */,
 				1187EFE021E9E22D006F1940 /* IconDownloader.swift in Sources */,
+				11004F2B21EA6AC40048F2F5 /* ConsultantDashboardViewController.swift in Sources */,
 				1187EFF821E9E255006F1940 /* ImageCache.swift in Sources */,
 				1187EFE721E9E234006F1940 /* ApiCall.swift in Sources */,
 				11E92DB621EA549600104DFE /* DreamerHomeViewController.swift in Sources */,
@@ -601,7 +602,6 @@
 				1187EF8821E9DF09006F1940 /* AppDelegate.swift in Sources */,
 				11E92DBD21EA549600104DFE /* RadioButton.swift in Sources */,
 				11E92DBF21EA549600104DFE /* NotificationCell.swift in Sources */,
-				11E92DB721EA549600104DFE /* DreamerLoginViewController.swift in Sources */,
 				11E92DBE21EA549600104DFE /* DreamerFollowerListCell.swift in Sources */,
 				11E92D7F21EA31C500104DFE /* ConsultentData.swift in Sources */,
 				1187EFF721E9E255006F1940 /* CryptoUtil.swift in Sources */,
