@@ -8,12 +8,13 @@
 
 import UIKit
 
-class DreamerFollowersViewController: BaseViewController {
+class DreamerFollowersViewController: BaseViewController, UITableViewDelegate, UITableViewDataSource {
 
   var consultantData: [ConsultentData]?
   
-    override func viewDidLoad() {
+  override func viewDidLoad() {
         super.viewDidLoad()
+    
     }
   
   func getConsultantData() {
@@ -33,5 +34,17 @@ class DreamerFollowersViewController: BaseViewController {
     }
   }
   
+  func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+    return 20
+  }
   
+  func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "DreamerFollowerListCell", for: indexPath) as! DreamerFollowerListCell
+    return cell
+  }
+  
+  func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+    return 130
+  }
+
 }

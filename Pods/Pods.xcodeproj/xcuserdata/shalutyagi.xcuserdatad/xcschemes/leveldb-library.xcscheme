@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "BAF3A3788D547CC3433D764D1949684F"
-               BuildableName = "Pods_PassionExperties.framework"
-               BlueprintName = "Pods-PassionExperties"
+               BlueprintIdentifier = "779ED5E9DA825BBD07A40CF77D086915"
+               BuildableName = "leveldb.framework"
+               BlueprintName = "leveldb-library"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "BAF3A3788D547CC3433D764D1949684F"
-            BuildableName = "Pods_PassionExperties.framework"
-            BlueprintName = "Pods-PassionExperties"
+            BlueprintIdentifier = "779ED5E9DA825BBD07A40CF77D086915"
+            BuildableName = "leveldb.framework"
+            BlueprintName = "leveldb-library"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>
