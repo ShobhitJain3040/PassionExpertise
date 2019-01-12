@@ -47,14 +47,14 @@ open class RequestParameter {
   
   public static func createDefaultSignedRequestParameter(_ url: String, method: Alamofire.HTTPMethod, parameters: [String: Any]? = nil) -> RequestParameter {
     //check for token and key
-    if  DataStore.sharedInstance.apiToken == nil {
-      
+//    if  DataStore.sharedInstance.apiToken == nil {
+    
 //      let userTokan = UserTokan.getCurrentUserCredential()
 //      if userTokan != nil {
 //        //set key and token
 //        DataStore.sharedInstance.apiToken = userTokan?.tokan
 //      }
-    }
+//    }
     // Get the api token and secrect
     if  let token = DataStore.sharedInstance.apiToken {
       debugLog("url is: \(url)")

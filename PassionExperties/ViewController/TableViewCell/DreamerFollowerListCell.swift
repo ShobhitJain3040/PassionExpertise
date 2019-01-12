@@ -19,6 +19,7 @@ class DreamerFollowerListCell: UITableViewCell {
   @IBOutlet weak var cardView: UIView!
   
   override func awakeFromNib() {
+    self.profilePic.layer.masksToBounds = true
     self.profilePic.layer.cornerRadius = 30
     self.addShadowInCardView(self.cardView)
   }
