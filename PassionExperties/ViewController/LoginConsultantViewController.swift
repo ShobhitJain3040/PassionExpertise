@@ -11,6 +11,8 @@ import FirebaseDatabase
 import FirebaseAuth
 
 class LoginConsultantViewController: UIViewController, UITextFieldDelegate {
+  
+  @IBOutlet weak var loginButton: GradientButton!
   @IBOutlet weak var userNameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
   var activeTextField: UITextField? = nil
@@ -18,6 +20,7 @@ class LoginConsultantViewController: UIViewController, UITextFieldDelegate {
   
   override func viewDidLoad() {
     super.viewDidLoad()
+    self.loginButton.layer.cornerRadius = 10
     let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(self.dismissKeyboard))
     self.view.addGestureRecognizer(tap)
     self.userNameTextField.delegate = self

@@ -12,6 +12,7 @@ pod 'Firebase/Database'
 pod 'Firebase/Auth'
 pod 'Firebase/Storage'
 pod 'MessageKit'
+pod 'DTGradientButton'
   # Pods for PassionExperties
 
 end
