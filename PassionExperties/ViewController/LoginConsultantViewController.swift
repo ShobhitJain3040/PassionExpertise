@@ -10,11 +10,13 @@ import Foundation
 import FirebaseDatabase
 import FirebaseAuth
 
-class LoginConsultantViewController: UIViewController, UITextFieldDelegate {
+class LoginConsultantViewController: BaseViewController, UITextFieldDelegate {
   
   @IBOutlet weak var loginButton: GradientButton!
   @IBOutlet weak var userNameTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
+  var currentUser: UserType?
+  
   var activeTextField: UITextField? = nil
   var offsetY:CGFloat = 0
   
@@ -65,21 +67,46 @@ class LoginConsultantViewController: UIViewController, UITextFieldDelegate {
     self.view.endEditing(true)
   }
   
+  
+  func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+    // Create a new variable to store the instance of PlayerTableViewController
+    let consultantSignUpViewController = segue.destination as? ConsultantSignUpViewController
+    consultantSignUpViewController?.currentUser = self.currentUser
+  }
+  
   @IBAction func onLoginButtonAction(_ sender: Any) {
+    if  !InternetManager.sharedInstance.isReachable {
+      Utilities.showAlertForMessage(message: "Please check your internet connection", vc: self)
+    } else {
     if let userName = self.userNameTextField.text, let password = self.passwordTextField.text {
+      self.progressHud.showHud()
       Auth.auth().signIn(withEmail: userName, password: password) { (authDataResult, error) in
         if error != nil {
           print("Error login in = \(error)")
+          self.progressHud.hideHud()
+          Utilities.showAlertForMessage(message: "FailedLogin", vc: self)
           return
         }
-        
+        self.progressHud.hideHud()
         print("Login in success")
+        DispatchQueue.main.async {
+          let user = UserType(rawValue: UserDefaults.standard.value(forKey: "Type") as! String)
+          if user == .Dreamer {
+            Utilities.getAppDelegate().replaceStoryboard("DreamerStoryboard")
+          } else {
+            Utilities.getAppDelegate().replaceStoryboard("Consultant")
+          }
+        }
+        
       }
-    }
+    } else {
+      Utilities.showAlertForMessage(message: "Please fill the userName/Password", vc: self)
+      }
+  }
   }
   
   @IBAction func onSignUpButtonAction(_ sender: Any) {
-    
+    self.performSegue(withIdentifier: "signup", sender: nil)
   }
   
   func textFieldShouldReturn(_ textField: UITextField) -> Bool {

@@ -14,6 +14,7 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
   let datePicker = UIDatePicker()
   var activeTextField: UITextField? = nil
   var offsetY:CGFloat = 0
+  var currentUser: UserType?
   
   @IBOutlet weak var genderTextField: UITextField!
   @IBOutlet weak var passwordTextField: UITextField!
@@ -41,6 +42,10 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
   
   @IBAction func onSignUp(_ sender: Any) {
     guard validate()else{return}
+    
+    if  !InternetManager.sharedInstance.isReachable {
+      Utilities.showAlertForMessage(message: "Please check your internet connection", vc: self)
+    } else {
     let ref = Database.database().reference()
     if let email = self.emailTextField.text, let password = self.passwordTextField.text {
       Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
@@ -55,6 +60,7 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
         let values: [String: String] = ["name": self.nameTextField.text ?? "defaultName", "dob": self.dobTextField.text ?? "defaultdob", "mobile": self.phoneNumberTextField.text ?? "defaultmobile", "gender": self.genderTextField.text ?? "defaultGender"]
         consultantRef.updateChildValues(values)
       }
+    }
     }
   }
   

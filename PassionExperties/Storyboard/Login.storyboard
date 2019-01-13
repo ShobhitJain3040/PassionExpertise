@@ -115,7 +115,7 @@
                                             <color key="titleColor" red="0.039215686270000001" green="0.94901960780000005" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
-                                            <segue destination="BLO-45-v74" kind="presentation" id="SNa-iE-JQ7"/>
+                                            <action selector="onSignUpButtonAction:" destination="fCA-ha-2xZ" eventType="touchUpInside" id="o7v-Iv-uhS"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -142,6 +142,7 @@
                         <outlet property="loginButton" destination="VEa-eA-fZo" id="0re-qX-7py"/>
                         <outlet property="passwordTextField" destination="bFS-DT-wUe" id="ce0-XT-oYj"/>
                         <outlet property="userNameTextField" destination="r7R-KR-7AP" id="pdR-zo-NEp"/>
+                        <segue destination="BLO-45-v74" kind="presentation" identifier="signup" id="BIw-EV-tFt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T2a-Kf-XIx" userLabel="First Responder" sceneMemberID="firstResponder"/>

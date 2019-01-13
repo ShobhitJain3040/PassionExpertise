@@ -60,7 +60,7 @@
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="5Co-Bs-dEF" kind="show" id="wya-XL-Zi0"/>
+                                    <action selector="pressStart:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JJR-eU-aLt"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xX2-Bg-2lY">
@@ -142,11 +142,12 @@
                         <outlet property="consultantButton" destination="o4B-x4-d0M" id="Vut-CP-4jw"/>
                         <outlet property="dremarButton" destination="xX2-Bg-2lY" id="XpU-eC-JKD"/>
                         <outlet property="letStart" destination="3rA-kY-zAJ" id="6vu-FI-FWb"/>
+                        <segue destination="5Co-Bs-dEF" kind="show" identifier="login" id="1Ub-pK-1ng"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1080.8" y="98.50074962518741"/>
+            <point key="canvasLocation" x="1106" y="145"/>
         </scene>
         <!--Login-->
         <scene sceneID="Q9n-B5-z4F">
@@ -154,7 +155,7 @@
                 <viewControllerPlaceholder storyboardName="Login" id="5Co-Bs-dEF" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Swi-YS-5Lt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1546" y="545"/>
+            <point key="canvasLocation" x="1510" y="-65"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="wdV-ZP-Aml">
