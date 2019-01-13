@@ -9,6 +9,7 @@
 import UIKit
 import CoreData
 import Firebase
+import FirebaseAuth
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -24,6 +25,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
     // Override point for customization after application launch.
     FirebaseApp.configure()
+    if Auth.auth().currentUser?.uid != nil, let type = UserType(rawValue: UserDefaults.standard.value(forKey: "Type") as? String ?? "") {
+      if UserType.Dreamer == type {
+        self.replaceStoryboard("DreamerStoryboard")
+      } else {
+        self.replaceStoryboard("Consultant")
+      }
+    }
     return true
   }
 
@@ -61,7 +69,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
   
   lazy var managedObjectModel: NSManagedObjectModel = {
     // The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.
-    let modelURL = Bundle.main.url(forResource: "Demo1", withExtension: "momd")!
+    let modelURL = Bundle.main.url(forResource: "PassionExperties", withExtension: "momd")!
     return NSManagedObjectModel(contentsOf: modelURL)!
   }()
   

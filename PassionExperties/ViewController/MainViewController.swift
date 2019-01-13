@@ -10,7 +10,7 @@ import UIKit
 
 enum UserType: String {
   case Dreamer = "Dreamer"
-  case Consultant = "Consultant"
+  case Consultant = "consultant"
 }
 
 enum ConsultantType: String {

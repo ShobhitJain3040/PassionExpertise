@@ -10,7 +10,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PassionExperties/ViewController/ConsultantSignUpViewController.swift"
-            timestampString = "569011697.279896"
+            timestampString = "569023865.932952"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "56"
@@ -26,7 +26,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PassionExperties/ViewController/ConsultantSignUpViewController.swift"
-            timestampString = "569011697.2802989"
+            timestampString = "569023865.933045"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "64"
@@ -42,7 +42,7 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PassionExperties/ViewController/ConsultantSignUpViewController.swift"
-            timestampString = "569011697.280579"
+            timestampString = "569023865.9331011"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "60"
@@ -58,45 +58,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PassionExperties/ViewController/LoginConsultantViewController.swift"
-            timestampString = "569011697.2808371"
+            timestampString = "569029722.8034869"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "67"
             endingLineNumber = "67"
-            landmarkName = "onLoginButtonAction(_:)"
+            landmarkName = "dismissKeyboard()"
             landmarkType = "7">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "PassionExperties.LoginConsultantViewController.onLoginButtonAction(Any) -&gt; ()"
-                  moduleName = "PassionExperties"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Personal_Data/Hackathon/NewFolder/passionexperties/PassionExperties/ViewController/LoginConsultantViewController.swift"
-                  timestampString = "569011697.615281"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "67"
-                  endingLineNumber = "67"
-                  offsetFromSymbolStart = "872">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;__C.FIRAuthDataResult&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in PassionExperties.LoginConsultantViewController.onLoginButtonAction(Any) -&gt; ()"
-                  moduleName = "PassionExperties"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Personal_Data/Hackathon/NewFolder/passionexperties/PassionExperties/ViewController/LoginConsultantViewController.swift"
-                  timestampString = "569011697.617292"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "68"
-                  endingLineNumber = "68"
-                  offsetFromSymbolStart = "36">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -106,12 +74,12 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PassionExperties/ViewController/LoginConsultantViewController.swift"
-            timestampString = "569011697.2811069"
+            timestampString = "569029722.803583"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "68"
             endingLineNumber = "68"
-            landmarkName = "onLoginButtonAction(_:)"
+            landmarkName = "dismissKeyboard()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

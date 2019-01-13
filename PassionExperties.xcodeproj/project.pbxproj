@@ -71,6 +71,7 @@
 		557842ADB3B199433AFAA6FA /* Pods_PassionExperties.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */; };
 		930ED9B921EA4557008C07E8 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 930ED9B821EA4557008C07E8 /* GoogleService-Info.plist */; };
 		930ED9BB21EA5C30008C07E8 /* DreamerStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 930ED9BA21EA5C30008C07E8 /* DreamerStoryboard.storyboard */; };
+		930ED9BD21EAB4DA008C07E8 /* AllChatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 930ED9BC21EAB4DA008C07E8 /* AllChatsViewController.swift */; };
 		93CBD35521E9EE760018075C /* Consultant.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 93CBD35421E9EE760018075C /* Consultant.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +144,7 @@
 		71280261078FE7A20E007807 /* Pods-PassionExperties.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.debug.xcconfig"; sourceTree = "<group>"; };
 		930ED9B821EA4557008C07E8 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		930ED9BA21EA5C30008C07E8 /* DreamerStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = DreamerStoryboard.storyboard; sourceTree = "<group>"; };
+		930ED9BC21EAB4DA008C07E8 /* AllChatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AllChatsViewController.swift; sourceTree = "<group>"; };
 		93CBD35421E9EE760018075C /* Consultant.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Consultant.storyboard; sourceTree = "<group>"; };
 		B709B8160223F32B3A72FE89 /* Pods-PassionExperties.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PassionExperties.release.xcconfig"; path = "Pods/Target Support Files/Pods-PassionExperties/Pods-PassionExperties.release.xcconfig"; sourceTree = "<group>"; };
 		F02D988D8F89D286AF6B420A /* Pods_PassionExperties.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PassionExperties.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -392,6 +394,7 @@
 				11E92DA721EA549600104DFE /* DreamerHomeViewController.swift */,
 				11E92DA921EA549600104DFE /* DreamerNotificationViewController.swift */,
 				11E92DAA21EA549600104DFE /* DreamerProfileViewController.swift */,
+				930ED9BC21EAB4DA008C07E8 /* AllChatsViewController.swift */,
 			);
 			path = Dreamer;
 			sourceTree = "<group>";
@@ -593,6 +596,7 @@
 				1187EFF021E9E240006F1940 /* InternetManager.swift in Sources */,
 				1187EFC621E9E220006F1940 /* ErrorView.swift in Sources */,
 				11E92DBC21EA549600104DFE /* MainViewController.swift in Sources */,
+				930ED9BD21EAB4DA008C07E8 /* AllChatsViewController.swift in Sources */,
 				11E92DB821EA549600104DFE /* DreamerNotificationViewController.swift in Sources */,
 				11E92DB321EA549600104DFE /* ConsultantSignUpViewController.swift in Sources */,
 				1187EFF921E9E255006F1940 /* ProgressHud.swift in Sources */,
