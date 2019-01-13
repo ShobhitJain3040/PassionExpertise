@@ -12,6 +12,7 @@
 		11004F3821EA849B0048F2F5 /* TextFields.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11004F3621EA849B0048F2F5 /* TextFields.swift */; };
 		11004F3921EA849B0048F2F5 /* GradientButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11004F3721EA849B0048F2F5 /* GradientButton.swift */; };
 		11004F3B21EACB0B0048F2F5 /* ConsultantHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11004F3A21EACB0B0048F2F5 /* ConsultantHomeViewController.swift */; };
+		11004F3D21EACEE80048F2F5 /* DreamarHomeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11004F3C21EACEE80048F2F5 /* DreamarHomeDetailViewController.swift */; };
 		1187EF8821E9DF09006F1940 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1187EF8721E9DF09006F1940 /* AppDelegate.swift */; };
 		1187EF8D21E9DF09006F1940 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1187EF8B21E9DF09006F1940 /* Main.storyboard */; };
 		1187EF9021E9DF09006F1940 /* PassionExperties.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1187EF8E21E9DF09006F1940 /* PassionExperties.xcdatamodeld */; };
@@ -82,6 +83,7 @@
 		11004F3621EA849B0048F2F5 /* TextFields.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFields.swift; sourceTree = "<group>"; };
 		11004F3721EA849B0048F2F5 /* GradientButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GradientButton.swift; sourceTree = "<group>"; };
 		11004F3A21EACB0B0048F2F5 /* ConsultantHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ConsultantHomeViewController.swift; path = PassionExperties/ViewController/ConsultantHomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		11004F3C21EACEE80048F2F5 /* DreamarHomeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamarHomeDetailViewController.swift; sourceTree = "<group>"; };
 		1187EF8421E9DF09006F1940 /* PassionExperties.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PassionExperties.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1187EF8721E9DF09006F1940 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1187EF8C21E9DF09006F1940 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -398,6 +400,7 @@
 				11E92DA921EA549600104DFE /* DreamerNotificationViewController.swift */,
 				11E92DAA21EA549600104DFE /* DreamerProfileViewController.swift */,
 				930ED9BC21EAB4DA008C07E8 /* AllChatsViewController.swift */,
+				11004F3C21EACEE80048F2F5 /* DreamarHomeDetailViewController.swift */,
 			);
 			path = Dreamer;
 			sourceTree = "<group>";
@@ -594,6 +597,7 @@
 				11E92DB221EA549600104DFE /* BaseViewController.swift in Sources */,
 				1187EFE821E9E234006F1940 /* NetworkManager.swift in Sources */,
 				11E92DB421EA549600104DFE /* DreamerChatViewController.swift in Sources */,
+				11004F3D21EACEE80048F2F5 /* DreamarHomeDetailViewController.swift in Sources */,
 				11E92DB921EA549600104DFE /* DreamerProfileViewController.swift in Sources */,
 				11E92DBB21EA549600104DFE /* LoginConsultantViewController.swift in Sources */,
 				1187EFF021E9E240006F1940 /* InternetManager.swift in Sources */,
@@ -779,7 +783,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspiringminds.PassionExperties;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspiringminds.PassionExperties1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PassionExperties-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;
@@ -799,7 +803,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.aspiringminds.PassionExperties;
+				PRODUCT_BUNDLE_IDENTIFIER = com.aspiringminds.PassionExperties1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "PassionExperties-Bridging-Header.h";
 				SWIFT_VERSION = 4.2;

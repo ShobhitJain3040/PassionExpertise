@@ -8,7 +8,7 @@
 
 import UIKit
 
-class DreamerHomeViewController: BaseViewController, UITableViewDataSource, UISearchBarDelegate {
+class DreamerHomeViewController: BaseViewController, UITableViewDataSource, UISearchBarDelegate, UITableViewDelegate {
 
   @IBOutlet weak var tableView: UITableView!
   @IBOutlet weak var searchBar: UISearchBar!
@@ -33,7 +33,10 @@ class DreamerHomeViewController: BaseViewController, UITableViewDataSource, UISe
     cell.textLabel?.text = self.searchList[indexPath.row]
     return cell
   }
-  
+
+  func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
+    self.performSegue(withIdentifier: "DreamarHomeDetailViewController", sender: nil)
+  }
   
   // call when "Done" key pressed
   func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
