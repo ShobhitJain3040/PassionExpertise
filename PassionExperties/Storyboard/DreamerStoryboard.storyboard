@@ -17,15 +17,45 @@
                     <view key="view" contentMode="scaleToFill" id="feH-nt-tvH">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <searchBar contentMode="redraw" placeholder="Search your passion" translatesAutoresizingMaskIntoConstraints="NO" id="l8S-bJ-rds">
+                                <rect key="frame" x="0.0" y="20" width="375" height="56"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="YCX-Zl-UHv" id="LwP-VR-JQf"/>
+                                </connections>
+                            </searchBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i3A-eR-G8h">
+                                <rect key="frame" x="0.0" y="76" width="375" height="542"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="YCX-Zl-UHv" id="QCA-zf-LSE"/>
+                                    <outlet property="delegate" destination="YCX-Zl-UHv" id="XUN-W5-nnf"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="i3A-eR-G8h" firstAttribute="leading" secondItem="WkU-f4-wmR" secondAttribute="leading" id="371-g9-Q7X"/>
+                            <constraint firstItem="WkU-f4-wmR" firstAttribute="bottom" secondItem="i3A-eR-G8h" secondAttribute="bottom" id="3ik-wN-eae"/>
+                            <constraint firstItem="WkU-f4-wmR" firstAttribute="trailing" secondItem="i3A-eR-G8h" secondAttribute="trailing" id="6YQ-yG-XBo"/>
+                            <constraint firstItem="l8S-bJ-rds" firstAttribute="trailing" secondItem="WkU-f4-wmR" secondAttribute="trailing" id="JjF-eH-ABp"/>
+                            <constraint firstItem="i3A-eR-G8h" firstAttribute="top" secondItem="l8S-bJ-rds" secondAttribute="bottom" id="KpB-Vp-lrA"/>
+                            <constraint firstItem="l8S-bJ-rds" firstAttribute="leading" secondItem="WkU-f4-wmR" secondAttribute="leading" id="N6z-3S-tXM"/>
+                            <constraint firstItem="l8S-bJ-rds" firstAttribute="top" secondItem="feH-nt-tvH" secondAttribute="top" constant="20" id="ZHa-et-0uD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="WkU-f4-wmR"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="homeIcon" id="98Z-dX-Rbg"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="searchBar" destination="l8S-bJ-rds" id="upz-0N-nqZ"/>
+                        <outlet property="tableView" destination="i3A-eR-G8h" id="qB4-rI-bjs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DWF-c7-Huc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1112.8" y="700.29985007496259"/>
+            <point key="canvasLocation" x="1217" y="582"/>
         </scene>
         <!--Dreamer Profile View Controller-->
         <scene sceneID="Hah-Eb-SVd">

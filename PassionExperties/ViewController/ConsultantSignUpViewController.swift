@@ -10,7 +10,7 @@ import UIKit
 import FirebaseDatabase
 import FirebaseAuth
 
-class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
+class ConsultantSignUpViewController: BaseViewController, UITextFieldDelegate {
   let datePicker = UIDatePicker()
   var activeTextField: UITextField? = nil
   var offsetY:CGFloat = 0
@@ -48,19 +48,29 @@ class ConsultantSignUpViewController: UIViewController, UITextFieldDelegate {
     } else {
     let ref = Database.database().reference()
     if let email = self.emailTextField.text, let password = self.passwordTextField.text {
+      self.progressHud.showHud()
       Auth.auth().createUser(withEmail: email, password: password) { (user, error) in
         if error != nil {
           print("Error = \(error)")
+          self.progressHud.hideHud()
+          Utilities.showAlertForMessage(message: "Failed", vc: self)
           return
         }
         guard let uid = user?.user.uid else {
+          self.progressHud.hideHud()
+          Utilities.showAlertForMessage(message: " Yor are already exit", vc: self)
           return
         }
-        let consultantRef = Database.database().reference().child("consultant").child(uid)
+        let user = UserType(rawValue: UserDefaults.standard.value(forKey: "Type") as! String)
+        let consultantRef = Database.database().reference().child(user!.rawValue).child(uid)
         let values: [String: String] = ["name": self.nameTextField.text ?? "defaultName", "dob": self.dobTextField.text ?? "defaultdob", "mobile": self.phoneNumberTextField.text ?? "defaultmobile", "gender": self.genderTextField.text ?? "defaultGender"]
         consultantRef.updateChildValues(values)
+        self.progressHud.hideHud()
+        self.dismiss(animated: true, completion: nil)
       }
-    }
+    } else {
+      Utilities.showAlertForMessage(message: "Please fill all field", vc: self)
+      }
     }
   }
   
